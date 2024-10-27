@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="s.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header Section with Profile Picture -->
+    <header class="header header-left">
+        <h1>Pratyush Tripathi</h1>
+        <p class="Introduction">Student | Programmer</p>
+        <button onclick="scrollToSection('contact')">Get in Touch</button>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="header-left">
+        <h2>About Me</h2>
+        <p>I'm a dedicated student currently pursuing a core degree in Computer Science Engineering (CSE) at SRM Institute of Science and Technology, Kattankulathur (SRMIST KTR). 
+            With a passion for learning, I excel in almost everything I engage in, from coding to drama. I also actively participate in various extracurricular activities, 
+            constantly seeking new opportunities to grow and develop my skills.
+        </p>
+        <p>I am enthusiastic about drama and have been a part of various theater productions, which have helped me build confidence, teamwork, and creative expression.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="header-right">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>School</h3>
+            <p>Progressive Education School, Indore, Madhya Pradesh.</p>
+        </div>
+        <div class="education-item">
+            <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+            <p>SRM University, 2023 - 2027</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="header-right">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Automated Wi-Fi Connection System</h3>
+            <p>Crops irrigation calculator.</p>
+        </div>
+        <div class="project">
+            <h3>ECG Monitoring System</h3>
+            <p>E Health Care Management System</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="header-left">
+        <h2>Skills</h2>
+        <!-- Programming Languages -->
+        <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="header-right">
+        <h2>Contact</h2>
+        <p>Email: pt4592@srmist.edu.in</p>
+        <p>Phone: +91 9335095085</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Pratyush Tripathi</p>
+    </footer>
+
+    <script>
+        // Smooth scroll to sections
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
